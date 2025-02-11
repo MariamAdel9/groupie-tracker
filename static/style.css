@@ -1,0 +1,71 @@
+body {
+  background-image: url("/static/image/1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 60%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 70%;
+  }
+}
+
+#name {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #ec8f80, #f9d2ae, #fdeb99);
+  background-size: 100% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#header {
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+  line-height: 1em;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #ec8f80, #f9d2ae, #fdeb99);
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 5s linear infinite;
+  color: #fff;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#information {
+  background-color: rgba(151, 92, 176, 0.318);
+  border: transparent;
+  border-radius: 5px;
+  width: 250px;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s;
+  overflow: hidden;
+}
+#information img {
+  justify-content: center;
+  width: 90%;
+  height: auto;
+  border-radius: 8px;
+}
+#information:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}

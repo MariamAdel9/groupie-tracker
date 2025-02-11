@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{.Names.Name}}</title>
+    <link rel="stylesheet" href="/static/detail.css" />
+  </head>
+
+  <body>
+    <div id="container1" class="clearfix">
+      <!-- Name Heading -->
+      <h1>{{.Names.Name}}</h1>
+
+      <!-- Image Section -->
+      <div id="image-container">
+        <img id="image" src="{{.Names.Image}}" alt="{{.Names.Name}}" />
+      </div>
+
+      <!-- Creation Date and First Album Section -->
+      <div id="info">
+        <div id="creation-date">
+          <h2><strong>Creation Date:</strong> {{.Names.Create}}</h2>
+        </div>
+        <div id="first-album">
+          <h2><strong>First Album:</strong> {{.Names.FirstAlbum}}</h2>
+        </div>
+      </div>
+
+      <!-- Members and Dates & Locations Section -->
+      <div id="details">
+        <div id="members">
+          <h2><strong>Members</strong></h2>
+          <ul>
+            {{range .Names.Members}}
+            <li>{{.}}</li>
+            {{end}}
+          </ul>
+        </div>
+
+        <div id="dates-locations">
+          <h2>Dates and Locations</h2>
+          <ul>
+            {{range .DateWLocation}}
+            {{range $location, $dates := .DatesLocations}}
+            <li>
+              Location: {{$location}}
+              <ul>
+                {{range $dates}}
+                <li>Date: {{.}}</li>
+                {{end}}
+              </ul>
+            </li>
+            {{end}}
+            {{end}}
+          </ul>
+        </div>
+
+
+      <!-- Back Home Button -->
+      <a href="http://localhost:8080/">
+        <button id="home-button">Home</button>
+      </a>
+    </div>
+  </body>
+</html>

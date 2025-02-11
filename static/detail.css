@@ -1,0 +1,134 @@
+body {
+  background-image: url("/static/image/1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#container1 {
+display: grid;
+  grid-template-columns: 1fr;
+  gap: 1%;
+  box-sizing: border-box;
+  padding: 1%;
+  margin: 8%;
+  align-items: center;
+  max-width: 50%, 60%;
+  /* border-radius: 8px; */
+  background-color: rgba(53, 6, 74, 0.318);
+  border: transparent;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  align-content: center;
+  justify-content: center;
+  justify-items: stretch;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #ec8f80 30%, #f9d2ae 60%, #fdeb99 100%);
+  background-size: 100% auto;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#image-container {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 0;
+}
+
+#image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Center Creation Date and First Album */
+#info {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center;
+  gap: 10px;
+}
+
+#creation-date h2,
+#first-album h2 {
+  margin: 0; /* Ensure there's no margin around the h2 */
+}
+
+#creation-date,
+#first-album {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: beige;
+}
+
+/* Members and Dates & Locations Section */
+#details {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns: for Members and Dates & Locations */
+  gap: 20px;
+  align-items: start; /* Align both items at the top of their respective columns */
+}
+
+#members {
+  display: flex; /* Using flexbox to center content */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: flex-start; /* Align content to the top */
+  align-items: center; /* Center horizontally */
+  padding: 15px;
+  border-radius: 8px;
+}
+
+#dates-locations {
+  display: flex; /* Using flexbox to center content */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  padding: 15px;
+  border-radius: 8px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+ul li {
+  padding: 5px 0;
+  color: #ecebe7;
+}
+
+ul ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+/* Back Home Button Styling */
+#home-button {
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fafbfc;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+#home-button:hover {
+  transform: scale(1.1);
+}

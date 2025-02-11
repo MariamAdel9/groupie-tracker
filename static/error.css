@@ -1,0 +1,50 @@
+body {
+  background-image: url("/static/image/1.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+h1 {
+  text-decoration: none;
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+.error {
+  align-content: center;
+  background-color: rgba(53, 6, 74, 0.318);
+  border: transparent;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 8%;
+  align-items: center;
+  max-width: 1200px;
+  height: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+}
+
+#home-button {
+  margin-top: 20px;
+  margin-left: 10px;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #fafbfc;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+#home-button:hover {
+  transform: scale(1.1);
+}

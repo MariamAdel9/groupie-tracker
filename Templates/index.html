@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artist and Location Info</title>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+
+  <body>
+    <div id="container1">
+      <div id="header"><h1>ARTISTS</h1></div>
+      <div class="cards">
+        {{range .Names}}
+        <div id="information">
+          <h2><a id="name" href="/detail/{{.ID}}">{{.Name}} </a></h2>
+          <a href="/detail/{{.ID}}">
+            <img src="{{.Image}}" alt="{{.Name}}" />
+          </a>
+        </div>
+        {{end}}
+      </div>
+    </div>
+  </body>
+</html>
