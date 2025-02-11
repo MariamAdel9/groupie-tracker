@@ -3,6 +3,12 @@
 
 **Groupie Tracker** is a web application that displays band and concert information using data from a provided API. The application allows users to explore artist profiles, concert locations, dates, and other related details through a user-friendly interface with various data visualizations.
 
+![Groupie Tracker Homepage](image1.png)
+
+
+![Artist Details](image2.png)
+
+
 ## Features
 
 - Display information about bands and artists (name, image, first album date, members, etc.).
